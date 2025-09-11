@@ -20,10 +20,10 @@ public class Solution extends GuessGame {
         // he is saying that pick random number  and sen it from guss mentod so it will tell you that wether it is greater or smaller
 
         int start =0,end=n;
-
+        
         while(start<=end){
             int mid=start +(end-start)/2;
-            int value=guess(mid);
+            int value=guess(mid); // you choose randm number using binary search and you passs it to guess mehos that we return wether it it higher(-1)or lowe(1) you choosed based on that we have to adle here in order to give good gusses numbers by using binary seerach radher that linear search
             if(value==0){
                 return mid;
             }
@@ -32,9 +32,10 @@ public class Solution extends GuessGame {
             }else{
                 start=mid+1;
             }
-
-
         }
         return 0;
+
+        // we computre it in (log n) from o(n)
+        // our main idea is to make system to execute faster in less timw by considering constarins
     }
 }
