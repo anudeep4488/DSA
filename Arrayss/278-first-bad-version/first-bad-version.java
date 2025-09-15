@@ -30,7 +30,7 @@ public class Solution extends VersionControl {
             if(value == true ){
                 end = randomeno;
             }
-            else if(value ==false){
+            else{
                 start = randomeno+1;
             }
             
